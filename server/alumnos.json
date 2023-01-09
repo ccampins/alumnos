@@ -1,0 +1,283 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "nombre": "Leandro",
+      "apellido": "Paredes",
+      "dni": "12345678",
+      "direccion": "Calle 1",
+      "grado": "4to",
+      "seccion": "B",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 16.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 18.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 15.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 18.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 16.5
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Lisandro",
+      "apellido": "Martinez",
+      "dni": "15835678",
+      "direccion": "Calle 2",
+      "grado": "4to",
+      "seccion": "C",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 12.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 14.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 16.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 18.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 17.5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Julian",
+      "apellido": "Alvarez",
+      "dni": "12344538",
+      "direccion": "Calle 3",
+      "grado": "3to",
+      "seccion": "A",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 15.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 16.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 17.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 14.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 15.5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Emiliano",
+      "apellido": "Martinez",
+      "dni": "12456678",
+      "direccion": "Calle 4",
+      "grado": "5to",
+      "seccion": "B",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 13.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 14.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 15.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 17.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 18.5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Rodrigo",
+      "apellido": "De Paul",
+      "dni": "12314378",
+      "direccion": "Calle 5",
+      "grado": "5to",
+      "seccion": "C",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 14.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 18.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 16.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 18.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 15.5
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Angel",
+      "apellido": "Di Maria",
+      "dni": "12345543",
+      "direccion": "Calle 6",
+      "grado": "3to",
+      "seccion": "D",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 15.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 18.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 16.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 18.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 17.5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Lionel",
+      "apellido": "Messi",
+      "dni": "12341278",
+      "direccion": "Calle 7",
+      "grado": "5to",
+      "seccion": "A",
+      "materias": [
+        {
+          "id": 1,
+          "nombre_materia": "Matematica",
+          "nota": 18.7
+        },
+        {
+          "id": 2,
+          "nombre_materia": "Quimica",
+          "nota": 18.7
+        },
+        {
+          "id": 3,
+          "nombre_materia": "Fisica",
+          "nota": 16.4
+        },
+        {
+          "id": 4,
+          "nombre_materia": "Automata",
+          "nota": 18.7
+        },
+        {
+          "id": 5,
+          "nombre_materia": "Inteligencia artificial",
+          "nota": 19.5
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Lautaro",
+      "apellido": "Martinez",
+      "dni": "12346587",
+      "direccion": "Calle 54",
+      "grado": "5to",
+      "seccion": "D",
+      "materias": [
+        {
+          "nombre_materia": "Matematica",
+          "nota": 15.4
+        },
+        {
+          "nombre_materia": "Quimica",
+          "nota": 16.5
+        },
+        {
+          "nombre_materia": "Fisica",
+          "nota": 14.2
+        },
+        {
+          "nombre_materia": "Automata",
+          "nota": 13.6
+        }
+      ]
+    }
+  ]
+}

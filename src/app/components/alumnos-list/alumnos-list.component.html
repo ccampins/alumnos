@@ -1,0 +1,43 @@
+<div class="m-4 d-flex justify-content-end">
+    <a routerLink="create" class="btn btn-primary">Crear Alumno</a>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+            <th>Direccion</th>
+            <th>Grado</th>
+            <th>Seccion</th>
+            <th>Materias</th>
+            <th>Promedio</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let alumno of alumnos">
+            <td>{{alumno.nombre}}</td>
+            <td>{{alumno.apellido}}</td>
+            <td>{{alumno.dni}}</td>
+            <td>{{alumno.direccion}}</td>
+            <td>{{alumno.grado}}</td>
+            <td>{{alumno.seccion}}</td>
+            <td>
+                <ul class="list-group list-group-horizontal" *ngFor="let materia of alumno.materias">
+                    <li class="list-group-item">{{materia.nombre_materia}}</li>
+                    <li class="list-group-item">{{materia.nota | number : "1.1"}}</li>
+                    <li *ngIf="materia.nota >= 15" class="list-group-item">👍🏻</li>
+                    <li *ngIf="materia.nota < 15" class="list-group-item">👎🏻</li>
+                </ul>
+            </td>
+            <td>{{alumno.promedio | number : "1.1"}}</td>
+            <td>
+                <a [routerLink]="['update',alumno.id]" class="btn btn-primary rounded rounded-circle">✏</a>
+                <br>
+                <br>
+                <button class="btn btn-danger rounded rounded-circle" (click)="delete(alumno.id)">🗑</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

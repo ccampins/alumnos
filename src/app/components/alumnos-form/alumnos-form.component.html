@@ -1,0 +1,72 @@
+<form action="" [formGroup]="form" (submit)="formSubmit()">
+    <div>
+        <label>Nombre</label>
+        <input type="text" class="form-control" id="nombre" formControlName="nombre">
+        <small *ngIf="form.get('nombre')?.invalid && form.get('nombre')?.dirty && form.get('nombre')?.errors" class="text-danger text-end">
+            {{'Nombre es requerido'}}
+        </small>
+    </div>
+    <div>
+        <label>Apellido</label>
+        <input type="text" class="form-control" id="apellido" formControlName="apellido">
+        <small *ngIf="form.get('apellido')?.invalid && form.get('apellido')?.dirty && form.get('apellido')?.errors" class="text-danger text-end">
+            {{'Apellido es requerido'}}
+        </small>
+    </div>
+    <div>
+        <label>DNI</label>
+        <input type="number" class="form-control" id="dni" formControlName="dni">
+        <small *ngIf="form.get('dni')?.invalid && form.get('dni')?.dirty && form.get('dni')?.errors" class="text-danger text-end">
+            {{'DNI no es valido'}}
+        </small>
+    </div>
+    <div>
+        <label>Direccion</label>
+        <input type="text" class="form-control" id="direccion" formControlName="direccion">
+        <small *ngIf="form.get('direccion')?.invalid && form.get('direccion')?.dirty && form.get('direccion')?.errors" class="text-danger text-end">
+            {{'Direccion es requerido'}}
+        </small>
+    </div>
+    <div>
+        <label>Grado</label>
+        <input type="text" class="form-control" id="grado" formControlName="grado">
+        <small *ngIf="form.get('grado')?.invalid && form.get('grado')?.dirty && form.get('grado')?.errors" class="text-danger text-end">
+            {{'Grado es requerido'}}
+        </small>
+    </div>
+    <div>
+        <label>Sección</label>
+        <input type="text" class="form-control" id="seccion" formControlName="seccion">
+        <small *ngIf="form.get('seccion')?.invalid && form.get('seccion')?.dirty && form.get('seccion')?.errors" class="text-danger text-end">
+            {{'Sección es requerido'}}
+        </small>
+    </div>
+    <div formArrayName="materias">
+        <button (click)="addMateria()" type="button" class="btn btn-primary m-2">Agregar Materia</button>
+        <div>
+            <div><label>Materias</label></div>
+            <br>
+            <ng-container *ngFor="let materia of materias.controls; let  i=index;">
+                <div class="grid" [formGroupName]="i">
+                    <div>
+                        <label>Nombre <span (click)="removeMateria(i)">🗑</span></label>
+                        <input type="text" class="form-control" id="nombre_materia" formControlName="nombre_materia">
+                        <small *ngIf="nombre_materia(i)?.invalid && nombre_materia(i)?.dirty && nombre_materia(i)?.errors" class="text-danger text-end">
+                            {{'Nombre es requerido'}}
+                        </small>
+                    </div>
+                    <div>
+                        <label>Nota</label>
+                        <input type="number" class="form-control" id="nota" formControlName="nota">
+                        <small *ngIf="nota(i)?.invalid && nota(i)?.dirty && nota(i)?.errors" class="text-danger text-end">
+                            {{'Nota es requerido'}}
+                        </small>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+    <br>
+    <button (click)="formSubmit()" type="button" class="btn btn-primary m-2">Crear Alumno</button>
+    <button (click)="cancelar()" type="button" class="btn btn-danger m-2">Cancelar</button>
+</form>
